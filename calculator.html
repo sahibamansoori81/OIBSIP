@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button{
+            margin: 3px;
+            padding: 3px;
+            width: 40px;
+            border-radius: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 10px rgb(230, 152, 52);
+            border: white;
+            
+        }
+        .forms{
+            border:1px black solid;
+            width:200px;
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: rgb(247, 243, 237);
+            box-shadow: 5px 5px 10px rgb(71, 69, 67);
+            border: white;
+        }
+        #show{
+            width: 135px;
+            margin: 10px;
+            height: 60px;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px 10px rgb(71, 69, 67);
+            border: rgb(199, 111, 111);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        #Enter{
+            width: 135px;
+            margin: 10px;
+            font-weight: 900;
+            border-radius: 7px;
+            background-color: rgb(29, 28, 27);
+            color: aliceblue;
+            box-shadow: 5px 5px 10px rgb(71, 69, 67);
+        }
+        #button:hover{
+            width: 50px;
+            border-radius: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            
+        }
+        #time{
+            width: 30%;
+            margin-left: 30px;
+            margin-top: 4px;
+            background-color: aqua;
+            text-align: left;
+            font-size: larger;
+            font-weight: bolder;
+        }
+      
+        .top{
+            display: inline-block;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" name="forms" class="forms">
+        
+    
+        <input id="show" type="text" name="show"><br>
+        <input type="button" id="button" name="1" value=" 1 " onclick="forms.show.value += '1'">
+        <input type="button" id="button" name="2" value=" 2 " onclick="forms.show.value += '2'">
+        <input type="button" id="button" name="3" value=" 3 " onclick="forms.show.value += '3'"><br>
+        <input type="button" id="button" name="4" value=" 4 " onclick="forms.show.value += '4'">
+        <input type="button" id="button" name="5" value=" 5 " onclick="forms.show.value += '5'">
+        <input type="button" id="button" name="6" value=" 6 " onclick="forms.show.value += '6'"><br>
+        <input type="button" id="button" name="7" value=" 7 " onclick="forms.show.value += '7'">
+        <input type="button" id="button" name="8" value=" 8 " onclick="forms.show.value += '8'">
+        <input type="button" id="button" name="9" value=" 9 " onclick="forms.show.value += '9'"><br>
+        <input type="button" id="button" name="+" value=" + " onclick="forms.show.value += '+'">
+        <input type="button" id="button" name="0" value=" 0 " onclick="forms.show.value += '0'">
+        <input type="button" id="button" name="-" value=" - " onclick="forms.show.value += '-'"><br>
+        <input type="button" id="button" name="/" value=" / " onclick="forms.show.value += '/'">
+        <input type="button" id="button" name="*" value=" * " onclick="forms.show.value += '*'">
+        <input type="button" id="button" name="AC" value=" AC " onclick="forms.show.value = ''"><br>
+        <input type="button" id="Enter" name="Enter" value=" Enter " onclick="forms.show.value= eval(forms.show.value)"><br>
+
+        
+    </form>
+    <!-- <script>
+        var Date= new Date();
+        var Hour =Date.getHours();
+        var Minutes = Date.getMinutes();
+        if(Hour>12){
+            Hour-=12;
+        }
+        document.getElementById("time").innerHTML= Hour+ ":"+Minutes;
+    </script> -->
+</body>
+</html>
